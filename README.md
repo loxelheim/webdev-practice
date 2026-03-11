@@ -1,0 +1,1 @@
+# WebDev Prctice done during Educational Course at Syntax Institute
