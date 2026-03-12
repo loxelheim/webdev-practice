@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" >
+
+
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
@@ -11,6 +14,51 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        
+        <section id="event-listener-practice" class="container">
+            <h2>Event Listener</h2>
+            <hr>
+            
+            <form id="item-form">
+                <input type="text" id="item-input"
+                placeholder="Neuer Eintrag...">
+                <button type="submit">Hinzufügen</button>
+            </form>
+            <ul id="item-list">
+                <!-- Items hier -->
+            </ul>
+            <script src="event-listener.js" defer></script>
+
+            
+        </section>
+
+
+
+
+
+        <section class="container" id="rainbow-shenanigans">
+            <h2>Rainbow? Rainbow.</h2>
+            <hr>
+
+            <div id="spectrum">
+                <div class="spec"></div>
+                <div class="spec"></div>
+                <div class="spec"></div>
+            </div>
+
+            <button onclick="addMoreColorStops()">Make the rainbow Smoother!</button>
+        </section>
+
+        <section class="container">
+            <h2>Text Elemetns</h2>
+            <hr>
+
+            <p>Paragraphs generate new line breaks. so if you have a paragraph inside a paragraph, like this: <p>Hi, I'm a paragraph inside a paragraph</p></p>
+
+            <p>I'm a paragraph with a span in it. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur nisi, <span style="padding: 0.5rem; background-color: orange; color:white;">Spans do not generate new line breaks</span> illum minima facilis a provident quis vitae rerum blanditiis ad officiis impedit, quidem quaerat id dicta soluta.</p>
+        </section>
+
+    </main>
 </body>
 </html>
