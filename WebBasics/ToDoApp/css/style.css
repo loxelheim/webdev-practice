@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#todo-target {
+    padding: 0;
+}
+#todo-target .todo-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.5rem;
+}
+#todo-target .todo-item span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#todo-target .todo-item.complete {
+    background-color: var(--pico-color-jade);
+    color: var(--pico-color-amber);
+}
