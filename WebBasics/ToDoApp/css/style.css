@@ -8,6 +8,16 @@
     justify-content: space-between;
     margin: 0;
     padding: 0.5rem;
+    align-items: center;
+}
+#todo-target .todo-item button {
+    height: 2rem;
+    width: 2rem;
+    padding: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #todo-target .todo-item span {
     display: flex;
@@ -15,8 +25,10 @@
     width: 100%;
     padding: 0.5rem;
 }
-
+#todo-target .todo-item.complete span {
+    text-decoration: line-through;
+}
 #todo-target .todo-item.complete {
     background-color: var(--pico-color-jade);
-    color: var(--pico-color-amber);
+    color: var(--pico-color-sand);
 }
