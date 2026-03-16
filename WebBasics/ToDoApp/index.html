@@ -13,26 +13,31 @@
 </head>
 <body>
 
-    <header></header>
+    <!-- <header></header> -->
 
     <main>
         
-        <section class="container">
-            <h2>What's up, Dawg? 🦎</h2>
-            <fieldset role="group">
-                <input type="text" id="todo-input">
-                <button id="todo-send">Add</button>
-            </fieldset>
-            <hr>
+        <section class="container grid">
+            <div><div class="lizard-image"></div></div>
+            <div>
+                <h2>What's up, Dawg? 🦎</h2>
+                <fieldset role="group">
+                    <input type="text" id="todo-input" placeholder="What the dog (🦎) doing?">
+                    <button id="todo-send">Add</button>
+                </fieldset>
+            </div>
         </section>
-
+        
+        <hr>
         <section class="container">
             <h2>That's up, Dawg! 🦎</h2>
+            <!-- list filled via JS -->
             <ul id="todo-target"></ul>
         </section>
+
     </main>
 
-    <footer></footer>
+    <!-- <footer></footer> -->
     
     <script src="script.js" defer></script>
 </body>

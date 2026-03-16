@@ -1,7 +1,22 @@
 @charset "UTF-8";
 
+/* header image */
+.lizard-image {
+    max-height: 50vh;
+    height: 30rem;
+    width: 100%;
+    display: block;
+    background: url(../hoppers-lizard-tom.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* todo List styling */
 #todo-target {
     padding: 0;
+    border: 0.1rem solid var(--pico-color-blue-300);
+    background: var(--pico-color-blue-100);
+    border-radius: var(--pico-border-radius);
 }
 #todo-target .todo-item {
     display: flex;
@@ -23,12 +38,12 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
 #todo-target .todo-item.complete span {
     text-decoration: line-through;
 }
 #todo-target .todo-item.complete {
-    background-color: var(--pico-color-jade);
-    color: var(--pico-color-sand);
+    background-color: var(--pico-color-green-150);
+    color: var(--pico-color-slate-600);
 }
