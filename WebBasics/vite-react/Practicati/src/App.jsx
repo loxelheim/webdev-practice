@@ -1,10 +1,12 @@
-import Header from "./Header"
+import Header from "./components/Header"
+import HelloWorldComp from "./compositions/HelloWorldComp"
 
 function App() {
 
   return (
     <>
       <Header />
+      <HelloWorldComp />
     </>
   )
 }
