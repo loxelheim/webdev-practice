@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Salutation() {
+function Salutation(props) {
   return (
-    <><h1>Hello! World?</h1></>
+    <><h1>{props.text}</h1></>
   )
 }
 

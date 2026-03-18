@@ -5,8 +5,8 @@ import SimpleText from "../components/SimpleText"
 function HelloWorldComp() {
   return (
     <>
-        <Salutation />
-        <SimpleText text="Hello, my name is Lex!" />
+        <Salutation text="Hello, World!" />
+        <SimpleText text="My name is Lex!" />
     </>
   )
 }
