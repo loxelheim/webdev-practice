@@ -13,14 +13,15 @@ export default function SignInForm() {
         // Login Versuch starten...
         console.log(credentials)
 
-        setEmail('');
-        setPassword('');
-        
-        if (email == "test@test.de" && password == "123456") {
+        if (credentials.email == "test@test.de" && credentials.password == "123456") {
             setIsLoggedIn(true);
         }
         
+        setEmail('');
+        setPassword('');
+        
     };
+
     if (isLoggedIn) {
         return (
             <h3>User is logged in!</h3>
