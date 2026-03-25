@@ -74,10 +74,19 @@ function loadTodoList(todoData, targetContainer) {
 }
 
 async function getTodoDataFromAPI() {
-    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
-    const todoData =  await response.json();
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/todos");
 
-    loadTodoList(todoData, targetList);
+        if (!response.ok) {
+            throw new Error('Something went wrong with the response')
+        }
+
+        const todoData =  await response.json();
+        loadTodoList(todoData, targetList);
+        
+    } catch (error) {
+        console.log("error ==> ", error);
+    }
 }
 
 getTodoDataFromAPI();
