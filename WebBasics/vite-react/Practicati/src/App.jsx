@@ -2,6 +2,7 @@ import Header from "./components/Header"
 import HelloWorldComp from "./compositions/HelloWorldComp"
 import Form from "./components/Form"
 import SignInForm from "./components/SignInForm"
+import ToDoList from "./components/ToDoList"
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <HelloWorldComp />
       {/* <Form></Form> */}
-      <SignInForm></SignInForm>
+      {/* <SignInForm></SignInForm> */}
+      <ToDoList></ToDoList>
     </>
   )
 }
