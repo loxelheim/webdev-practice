@@ -4,11 +4,8 @@ import { loadTodos } from "../api/jsonPlaceholderTodos";
 function ToDoList() {
   const [results, setResults] = useState([]);
 
-  async function loadPage() {
-    setResults(await loadTodos())
-  }
-  
   useEffect(() => {
+    async function loadPage() { setResults(await loadTodos()) }
     loadPage()
   }, []);
 
